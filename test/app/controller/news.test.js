@@ -1,13 +1,14 @@
+// test/controller/news.test.js
+
 'use strict';
 
 const { app } = require('egg-mock/bootstrap');
 
-describe('test/app/controller/home.test.js', () => {
-  it('should GET /', () => {
+describe('test/controller/news.test.js', () => {
+  it('should get /news', () => {
     return app
       .httpRequest()
       .get('/')
-      .expect('Hello, World!')
       .expect(200);
   });
 });
